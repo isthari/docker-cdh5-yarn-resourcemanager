@@ -3,7 +3,7 @@ FROM isthari/cdh5-base
 RUN apt-get update
 RUN apt-get install -y -t jessie-cdh5 hadoop-yarn-resourcemanager hadoop-yarn-proxyserver
 
-EXPOSE 8088 8032
+EXPOSE 8088 8033 8032 8031 8030
 
 ADD core-site.xml /etc/hadoop/conf/core-site.xml
 ADD yarn-site.xml /etc/hadoop/conf/yarn-site.xml
